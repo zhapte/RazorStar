@@ -1,0 +1,14 @@
+﻿@page
+@model RazorStar.Pages.ProcessDetailPageModel
+@{
+    Process process = (Process)ViewData["Proc"]!;
+}
+<div>
+    <h2>Process Detail Page</h2>
+    <div>
+        <h3>Process Name: @process.ProcessName</h3>
+        <p>Process ID: @process.Id</p>
+        <p>Start Time: @process.StartTime</p>
+        <p>Total Processor Time: @process.TotalProcessorTime</p>
+    </div>
+</div>
